@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Awesome Player</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/popups.css">
+    <link rel="stylesheet" href="css/design.css">
+  </head>
+  
+  <body>
+    <header>
+      <div id="design-header">
+        <button id="new-playlist-button"><i class="fas fa-plus-circle"></i> Add new playlist </button>
+        <h1 id="app-title">Playlist App</h1> 
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <input type="search" placeholder="Search for playlists">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="all_playlists_container">
+      </div> 
+    </main>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.arctext.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="JS/Playlist.js"></script>
+    <script type="text/javascript" src="JS/Player.js"></script>
+    <script type="text/javascript" src="JS/NewPlaylistPopup.js"></script>
+    <script type="text/javascript" src="JS/EditPlaylistPopup.js"></script>
+    <script type="text/javascript" src="JS/DeletePlaylistPopup.js"></script>
+    
+    <script>
+      function setMarginTop () {
+        var heightForMargin = $('header').outerHeight(true)
+        var main = $('main');
+        main.css('margin-top', (heightForMargin + 15) + 'px');
+      }
+      setMarginTop();
+      $(window).on('resize', function(){
+        setMarginTop();
+      });
+      $(document).ready(function () {
+        $('.playlist_title').arctext({radius: 160});
+      })
+    </script>
+  </body>
+</html>

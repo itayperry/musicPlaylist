@@ -1,0 +1,166 @@
+.closing_button {
+  font-size: 1.5rem;
+  color: #372f2c;
+}
+.new_playlist_popup {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top:0;
+  bottom:0;
+  right:0;
+  width: 100%; height: 100%;
+}
+.new-playlist-popup-content {
+  padding: 0 2rem 1.5rem;
+  position: relative;
+  border: 3px solid brown;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  background-color: #fefefe;
+  margin: 10% auto;
+  overflow: auto;
+}
+
+.popup_title {
+  margin-bottom: 2rem;
+}
+
+#new-popup-form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#new-popup-labels {
+  margin-right: 2rem;
+}
+
+#new-popup-labels label {
+  display: block;
+} 
+#new-popup-labels label:last-child {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem
+}
+
+#new-popup-labels span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+#new-popup-labels input, fieldset input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 0.0625rem solid #aaa;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  outline: none;
+  font-family: 'Lora', serif;
+}
+.preview_image_text {
+  display:block;
+  text-align: center;
+  margin-bottom: 1rem
+}
+
+#popup-image {
+  width: 11.25rem;
+}
+
+#new-playlist-popup-form button {
+  background-color: #372f2c;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;   
+  margin-top: 0.5rem;
+}
+
+#new-playlist-popup-form .delete_btns {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#new-playlist-popup-form button:first-child {
+  margin-right: 1rem;
+}
+
+.closing_button_container {
+  position: absolute; 
+  top:0.6rem;
+  right: 0.6rem;
+}
+
+.add_songs_popup_header {
+  display: flex; 
+  align-items: center;
+}
+
+.add_songs_popup_image {
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+}
+
+fieldset {
+  border: none;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 33.125rem;
+}
+
+fieldset label {
+  display: inline-block;
+}
+fieldset label:first-child {
+  margin-right: 0.5rem;
+}
+fieldset span {
+  font-size: 1.1rem;
+  margin-right: 0.1rem;
+  margin-top: 1rem;
+  vertical-align: middle;
+}
+
+.songs_popup_title {
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.close_fieldset_btn {
+  position: absolute;
+  color: #cc4e4e;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  /*bottom:0;*/
+}
+
+.contain_fields {
+  max-height: 14.8rem;
+  /*overflow: auto;*/
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.contain_fields::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+.contain_fields::-webkit-scrollbar {
+  width: 10px;
+}
+.contain_fields::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #cc4e4e;;
+}
+.btns_second_popup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
